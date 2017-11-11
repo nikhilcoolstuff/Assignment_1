@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B96E70B01FB6EC65009630ED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B96E70AF1FB6EC65009630ED /* AppDelegate.m */; };
+		B96E70B31FB6EC65009630ED /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B96E70B21FB6EC65009630ED /* ViewController.m */; };
+		B96E70B61FB6EC65009630ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B96E70B41FB6EC65009630ED /* Main.storyboard */; };
+		B96E70B81FB6EC65009630ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B96E70B71FB6EC65009630ED /* Assets.xcassets */; };
+		B96E70BB1FB6EC65009630ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B96E70B91FB6EC65009630ED /* LaunchScreen.storyboard */; };
+		B96E70BE1FB6EC65009630ED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B96E70BD1FB6EC65009630ED /* main.m */; };
+		B96E70C81FB6EC65009630ED /* MerakiNetworkClientsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B96E70C71FB6EC65009630ED /* MerakiNetworkClientsTests.m */; };
+		B96E70D31FB6EC65009630ED /* MerakiNetworkClientsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B96E70D21FB6EC65009630ED /* MerakiNetworkClientsUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B96E70C41FB6EC65009630ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B96E70A31FB6EC65009630ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B96E70AA1FB6EC65009630ED;
+			remoteInfo = MerakiNetworkClients;
+		};
+		B96E70CF1FB6EC65009630ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B96E70A31FB6EC65009630ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B96E70AA1FB6EC65009630ED;
+			remoteInfo = MerakiNetworkClients;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B96E70AB1FB6EC65009630ED /* MerakiNetworkClients.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MerakiNetworkClients.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B96E70AE1FB6EC65009630ED /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B96E70AF1FB6EC65009630ED /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B96E70B11FB6EC65009630ED /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B96E70B21FB6EC65009630ED /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B96E70B51FB6EC65009630ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B96E70B71FB6EC65009630ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B96E70BA1FB6EC65009630ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B96E70BC1FB6EC65009630ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B96E70BD1FB6EC65009630ED /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B96E70C31FB6EC65009630ED /* MerakiNetworkClientsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MerakiNetworkClientsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B96E70C71FB6EC65009630ED /* MerakiNetworkClientsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MerakiNetworkClientsTests.m; sourceTree = "<group>"; };
+		B96E70C91FB6EC65009630ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B96E70CE1FB6EC65009630ED /* MerakiNetworkClientsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MerakiNetworkClientsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B96E70D21FB6EC65009630ED /* MerakiNetworkClientsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MerakiNetworkClientsUITests.m; sourceTree = "<group>"; };
+		B96E70D41FB6EC65009630ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B96E70A81FB6EC65009630ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B96E70C01FB6EC65009630ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B96E70CB1FB6EC65009630ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B96E70A21FB6EC65009630ED = {
+			isa = PBXGroup;
+			children = (
+				B96E70AD1FB6EC65009630ED /* MerakiNetworkClients */,
+				B96E70C61FB6EC65009630ED /* MerakiNetworkClientsTests */,
+				B96E70D11FB6EC65009630ED /* MerakiNetworkClientsUITests */,
+				B96E70AC1FB6EC65009630ED /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B96E70AC1FB6EC65009630ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B96E70AB1FB6EC65009630ED /* MerakiNetworkClients.app */,
+				B96E70C31FB6EC65009630ED /* MerakiNetworkClientsTests.xctest */,
+				B96E70CE1FB6EC65009630ED /* MerakiNetworkClientsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B96E70AD1FB6EC65009630ED /* MerakiNetworkClients */ = {
+			isa = PBXGroup;
+			children = (
+				B96E70AE1FB6EC65009630ED /* AppDelegate.h */,
+				B96E70AF1FB6EC65009630ED /* AppDelegate.m */,
+				B96E70B11FB6EC65009630ED /* ViewController.h */,
+				B96E70B21FB6EC65009630ED /* ViewController.m */,
+				B96E70B41FB6EC65009630ED /* Main.storyboard */,
+				B96E70B71FB6EC65009630ED /* Assets.xcassets */,
+				B96E70B91FB6EC65009630ED /* LaunchScreen.storyboard */,
+				B96E70BC1FB6EC65009630ED /* Info.plist */,
+				B96E70BD1FB6EC65009630ED /* main.m */,
+			);
+			path = MerakiNetworkClients;
+			sourceTree = "<group>";
+		};
+		B96E70C61FB6EC65009630ED /* MerakiNetworkClientsTests */ = {
+			isa = PBXGroup;
+			children = (
+				B96E70C71FB6EC65009630ED /* MerakiNetworkClientsTests.m */,
+				B96E70C91FB6EC65009630ED /* Info.plist */,
+			);
+			path = MerakiNetworkClientsTests;
+			sourceTree = "<group>";
+		};
+		B96E70D11FB6EC65009630ED /* MerakiNetworkClientsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B96E70D21FB6EC65009630ED /* MerakiNetworkClientsUITests.m */,
+				B96E70D41FB6EC65009630ED /* Info.plist */,
+			);
+			path = MerakiNetworkClientsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B96E70AA1FB6EC65009630ED /* MerakiNetworkClients */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B96E70D71FB6EC65009630ED /* Build configuration list for PBXNativeTarget "MerakiNetworkClients" */;
+			buildPhases = (
+				B96E70A71FB6EC65009630ED /* Sources */,
+				B96E70A81FB6EC65009630ED /* Frameworks */,
+				B96E70A91FB6EC65009630ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MerakiNetworkClients;
+			productName = MerakiNetworkClients;
+			productReference = B96E70AB1FB6EC65009630ED /* MerakiNetworkClients.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B96E70C21FB6EC65009630ED /* MerakiNetworkClientsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B96E70DA1FB6EC65009630ED /* Build configuration list for PBXNativeTarget "MerakiNetworkClientsTests" */;
+			buildPhases = (
+				B96E70BF1FB6EC65009630ED /* Sources */,
+				B96E70C01FB6EC65009630ED /* Frameworks */,
+				B96E70C11FB6EC65009630ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B96E70C51FB6EC65009630ED /* PBXTargetDependency */,
+			);
+			name = MerakiNetworkClientsTests;
+			productName = MerakiNetworkClientsTests;
+			productReference = B96E70C31FB6EC65009630ED /* MerakiNetworkClientsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B96E70CD1FB6EC65009630ED /* MerakiNetworkClientsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B96E70DD1FB6EC65009630ED /* Build configuration list for PBXNativeTarget "MerakiNetworkClientsUITests" */;
+			buildPhases = (
+				B96E70CA1FB6EC65009630ED /* Sources */,
+				B96E70CB1FB6EC65009630ED /* Frameworks */,
+				B96E70CC1FB6EC65009630ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B96E70D01FB6EC65009630ED /* PBXTargetDependency */,
+			);
+			name = MerakiNetworkClientsUITests;
+			productName = MerakiNetworkClientsUITests;
+			productReference = B96E70CE1FB6EC65009630ED /* MerakiNetworkClientsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B96E70A31FB6EC65009630ED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = Meraki;
+				TargetAttributes = {
+					B96E70AA1FB6EC65009630ED = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					B96E70C21FB6EC65009630ED = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B96E70AA1FB6EC65009630ED;
+					};
+					B96E70CD1FB6EC65009630ED = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B96E70AA1FB6EC65009630ED;
+					};
+				};
+			};
+			buildConfigurationList = B96E70A61FB6EC65009630ED /* Build configuration list for PBXProject "MerakiNetworkClients" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B96E70A21FB6EC65009630ED;
+			productRefGroup = B96E70AC1FB6EC65009630ED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B96E70AA1FB6EC65009630ED /* MerakiNetworkClients */,
+				B96E70C21FB6EC65009630ED /* MerakiNetworkClientsTests */,
+				B96E70CD1FB6EC65009630ED /* MerakiNetworkClientsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B96E70A91FB6EC65009630ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B96E70BB1FB6EC65009630ED /* LaunchScreen.storyboard in Resources */,
+				B96E70B81FB6EC65009630ED /* Assets.xcassets in Resources */,
+				B96E70B61FB6EC65009630ED /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B96E70C11FB6EC65009630ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B96E70CC1FB6EC65009630ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B96E70A71FB6EC65009630ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B96E70B31FB6EC65009630ED /* ViewController.m in Sources */,
+				B96E70BE1FB6EC65009630ED /* main.m in Sources */,
+				B96E70B01FB6EC65009630ED /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B96E70BF1FB6EC65009630ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B96E70C81FB6EC65009630ED /* MerakiNetworkClientsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B96E70CA1FB6EC65009630ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B96E70D31FB6EC65009630ED /* MerakiNetworkClientsUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B96E70C51FB6EC65009630ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B96E70AA1FB6EC65009630ED /* MerakiNetworkClients */;
+			targetProxy = B96E70C41FB6EC65009630ED /* PBXContainerItemProxy */;
+		};
+		B96E70D01FB6EC65009630ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B96E70AA1FB6EC65009630ED /* MerakiNetworkClients */;
+			targetProxy = B96E70CF1FB6EC65009630ED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B96E70B41FB6EC65009630ED /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B96E70B51FB6EC65009630ED /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B96E70B91FB6EC65009630ED /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B96E70BA1FB6EC65009630ED /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B96E70D51FB6EC65009630ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B96E70D61FB6EC65009630ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B96E70D81FB6EC65009630ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M2X898KNVY;
+				INFOPLIST_FILE = MerakiNetworkClients/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Meraki.MerakiNetworkClients;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B96E70D91FB6EC65009630ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M2X898KNVY;
+				INFOPLIST_FILE = MerakiNetworkClients/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Meraki.MerakiNetworkClients;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B96E70DB1FB6EC65009630ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M2X898KNVY;
+				INFOPLIST_FILE = MerakiNetworkClientsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Meraki.MerakiNetworkClientsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MerakiNetworkClients.app/MerakiNetworkClients";
+			};
+			name = Debug;
+		};
+		B96E70DC1FB6EC65009630ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M2X898KNVY;
+				INFOPLIST_FILE = MerakiNetworkClientsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Meraki.MerakiNetworkClientsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MerakiNetworkClients.app/MerakiNetworkClients";
+			};
+			name = Release;
+		};
+		B96E70DE1FB6EC65009630ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M2X898KNVY;
+				INFOPLIST_FILE = MerakiNetworkClientsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Meraki.MerakiNetworkClientsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MerakiNetworkClients;
+			};
+			name = Debug;
+		};
+		B96E70DF1FB6EC65009630ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M2X898KNVY;
+				INFOPLIST_FILE = MerakiNetworkClientsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Meraki.MerakiNetworkClientsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MerakiNetworkClients;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B96E70A61FB6EC65009630ED /* Build configuration list for PBXProject "MerakiNetworkClients" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B96E70D51FB6EC65009630ED /* Debug */,
+				B96E70D61FB6EC65009630ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B96E70D71FB6EC65009630ED /* Build configuration list for PBXNativeTarget "MerakiNetworkClients" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B96E70D81FB6EC65009630ED /* Debug */,
+				B96E70D91FB6EC65009630ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B96E70DA1FB6EC65009630ED /* Build configuration list for PBXNativeTarget "MerakiNetworkClientsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B96E70DB1FB6EC65009630ED /* Debug */,
+				B96E70DC1FB6EC65009630ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B96E70DD1FB6EC65009630ED /* Build configuration list for PBXNativeTarget "MerakiNetworkClientsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B96E70DE1FB6EC65009630ED /* Debug */,
+				B96E70DF1FB6EC65009630ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B96E70A31FB6EC65009630ED /* Project object */;
+}
