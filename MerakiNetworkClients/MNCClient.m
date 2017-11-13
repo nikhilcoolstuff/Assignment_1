@@ -19,7 +19,7 @@
             _isOnline = NO;
         else
             _isOnline = YES;
-        
+         
         _firstSeen = dictionary[@"onlineStatus"][@"firstSeen"];
         _lastSeen = dictionary[@"onlineStatus"][@"lastSeen"];
         _connectedBy = dictionary[@"onlineStatus"][@"connectedBy"];
