@@ -13,5 +13,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *usageLabel;
 @property (weak, nonatomic) IBOutlet UILabel *connectedByLabel;
 @property (weak, nonatomic) IBOutlet UILabel *alertLabel;
+@property (weak, nonatomic) IBOutlet UIView *onlineStatusView;
 
 @end
