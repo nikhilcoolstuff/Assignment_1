@@ -1,15 +1,13 @@
 //
-//  ViewController.h
+//  MNCApiManager.h
 //  MerakiNetworkClients
 //
 //  Created by Nikhil Lele on 11/11/17.
 //  Copyright © 2017 Meraki. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
-@interface ViewController : UIViewController
-
-
+@interface MNCApiManager : NSObject
+-(NSArray *) getClients; 
 @end
-

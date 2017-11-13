@@ -8,13 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		B96E70B01FB6EC65009630ED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B96E70AF1FB6EC65009630ED /* AppDelegate.m */; };
-		B96E70B31FB6EC65009630ED /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B96E70B21FB6EC65009630ED /* ViewController.m */; };
+		B96E70B31FB6EC65009630ED /* MNCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B96E70B21FB6EC65009630ED /* MNCViewController.m */; };
 		B96E70B61FB6EC65009630ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B96E70B41FB6EC65009630ED /* Main.storyboard */; };
 		B96E70B81FB6EC65009630ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B96E70B71FB6EC65009630ED /* Assets.xcassets */; };
 		B96E70BB1FB6EC65009630ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B96E70B91FB6EC65009630ED /* LaunchScreen.storyboard */; };
 		B96E70BE1FB6EC65009630ED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B96E70BD1FB6EC65009630ED /* main.m */; };
 		B96E70C81FB6EC65009630ED /* MerakiNetworkClientsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B96E70C71FB6EC65009630ED /* MerakiNetworkClientsTests.m */; };
 		B96E70D31FB6EC65009630ED /* MerakiNetworkClientsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B96E70D21FB6EC65009630ED /* MerakiNetworkClientsUITests.m */; };
+		B96E70E21FB6F73B009630ED /* MNCApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B96E70E11FB6F73B009630ED /* MNCApiManager.m */; };
+		B96E70E41FB6F81C009630ED /* clients.json in Resources */ = {isa = PBXBuildFile; fileRef = B96E70E31FB6F81C009630ED /* clients.json */; };
+		B96E70E71FB70108009630ED /* MNCClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B96E70E61FB70108009630ED /* MNCClient.m */; };
+		B96E70EB1FB75A71009630ED /* MNCClientViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B96E70EA1FB75A71009630ED /* MNCClientViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +42,8 @@
 		B96E70AB1FB6EC65009630ED /* MerakiNetworkClients.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MerakiNetworkClients.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B96E70AE1FB6EC65009630ED /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B96E70AF1FB6EC65009630ED /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B96E70B11FB6EC65009630ED /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B96E70B21FB6EC65009630ED /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B96E70B11FB6EC65009630ED /* MNCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MNCViewController.h; sourceTree = "<group>"; };
+		B96E70B21FB6EC65009630ED /* MNCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MNCViewController.m; sourceTree = "<group>"; };
 		B96E70B51FB6EC65009630ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B96E70B71FB6EC65009630ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B96E70BA1FB6EC65009630ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +55,13 @@
 		B96E70CE1FB6EC65009630ED /* MerakiNetworkClientsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MerakiNetworkClientsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B96E70D21FB6EC65009630ED /* MerakiNetworkClientsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MerakiNetworkClientsUITests.m; sourceTree = "<group>"; };
 		B96E70D41FB6EC65009630ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B96E70E01FB6F73B009630ED /* MNCApiManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MNCApiManager.h; sourceTree = "<group>"; };
+		B96E70E11FB6F73B009630ED /* MNCApiManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MNCApiManager.m; sourceTree = "<group>"; };
+		B96E70E31FB6F81C009630ED /* clients.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = clients.json; sourceTree = "<group>"; };
+		B96E70E51FB70108009630ED /* MNCClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MNCClient.h; sourceTree = "<group>"; };
+		B96E70E61FB70108009630ED /* MNCClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MNCClient.m; sourceTree = "<group>"; };
+		B96E70E91FB75A71009630ED /* MNCClientViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MNCClientViewCell.h; sourceTree = "<group>"; };
+		B96E70EA1FB75A71009630ED /* MNCClientViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MNCClientViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,13 +114,20 @@
 			children = (
 				B96E70AE1FB6EC65009630ED /* AppDelegate.h */,
 				B96E70AF1FB6EC65009630ED /* AppDelegate.m */,
-				B96E70B11FB6EC65009630ED /* ViewController.h */,
-				B96E70B21FB6EC65009630ED /* ViewController.m */,
+				B96E70E51FB70108009630ED /* MNCClient.h */,
+				B96E70E61FB70108009630ED /* MNCClient.m */,
+				B96E70B11FB6EC65009630ED /* MNCViewController.h */,
+				B96E70E01FB6F73B009630ED /* MNCApiManager.h */,
+				B96E70E11FB6F73B009630ED /* MNCApiManager.m */,
+				B96E70B21FB6EC65009630ED /* MNCViewController.m */,
+				B96E70E91FB75A71009630ED /* MNCClientViewCell.h */,
+				B96E70EA1FB75A71009630ED /* MNCClientViewCell.m */,
 				B96E70B41FB6EC65009630ED /* Main.storyboard */,
 				B96E70B71FB6EC65009630ED /* Assets.xcassets */,
 				B96E70B91FB6EC65009630ED /* LaunchScreen.storyboard */,
 				B96E70BC1FB6EC65009630ED /* Info.plist */,
 				B96E70BD1FB6EC65009630ED /* main.m */,
+				B96E70E31FB6F81C009630ED /* clients.json */,
 			);
 			path = MerakiNetworkClients;
 			sourceTree = "<group>";
@@ -240,6 +258,7 @@
 			files = (
 				B96E70BB1FB6EC65009630ED /* LaunchScreen.storyboard in Resources */,
 				B96E70B81FB6EC65009630ED /* Assets.xcassets in Resources */,
+				B96E70E41FB6F81C009630ED /* clients.json in Resources */,
 				B96E70B61FB6EC65009630ED /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,9 +284,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B96E70B31FB6EC65009630ED /* ViewController.m in Sources */,
+				B96E70EB1FB75A71009630ED /* MNCClientViewCell.m in Sources */,
+				B96E70B31FB6EC65009630ED /* MNCViewController.m in Sources */,
+				B96E70E21FB6F73B009630ED /* MNCApiManager.m in Sources */,
 				B96E70BE1FB6EC65009630ED /* main.m in Sources */,
 				B96E70B01FB6EC65009630ED /* AppDelegate.m in Sources */,
+				B96E70E71FB70108009630ED /* MNCClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
