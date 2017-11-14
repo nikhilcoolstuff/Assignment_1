@@ -76,6 +76,7 @@ static NSString * const TITLE = @"M E R A K I     C L I E N T";
     cell.usageLabel.text = [NSString stringWithFormat:@"Sent: %@ Received: %@", [MNCUtilities formatKiloBytesFromNumber:client.sent], [MNCUtilities formatKiloBytesFromNumber: client.recv]];
     cell.connectedByLabel.text = client.connectedBy;
     cell.alertLabel.text = [self highUsageClientStringForClient:client];
+    
     if (client.isOnline)
         cell.onlineStatusView.backgroundColor = [UIColor greenColor];
     else
