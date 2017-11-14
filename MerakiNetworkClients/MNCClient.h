@@ -13,7 +13,7 @@
 // Client Info
 @property (readonly, nonatomic, copy) NSString *desc;
 @property (readonly, nonatomic, copy) NSString *ip;
-@property (readonly, nonatomic, assign) BOOL isOnline;
+@property (readonly, nonatomic, assign) NSNumber *isOnline;
 
 // Online Status
 @property (readonly, nonatomic, strong) NSNumber *firstSeen;

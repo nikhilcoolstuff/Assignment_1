@@ -64,7 +64,7 @@ static NSString * const CELL_ID = @"clientViewCellID";
     cell.usageLabel.text = [NSString stringWithFormat:@"Received: %ld Sent %ld (in KB)", [client.recv integerValue], [client.sent integerValue]];
     cell.connectedByLabel.text = client.connectedBy;
     cell.alertLabel.text = @"test";
-    if (client.isOnline)
+    if ([client.isOnline boolValue])
         cell.onlineStatusView.backgroundColor = [UIColor greenColor];
     else
         cell.onlineStatusView.backgroundColor = [UIColor colorWithWhite:0.9 alpha:1.0f];

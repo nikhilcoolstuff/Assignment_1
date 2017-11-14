@@ -15,11 +15,7 @@
     if (self) {
         _desc = dictionary[@"clientInfo"][@"description"];
         _ip = dictionary[@"clientInfo"][@"ip"];
-        if (dictionary[@"clientInfo"][@"isOnline"] == 0)
-            _isOnline = NO;
-        else
-            _isOnline = YES;
-         
+        _isOnline = dictionary[@"clientInfo"][@"isOnline"];
         _firstSeen = dictionary[@"onlineStatus"][@"firstSeen"];
         _lastSeen = dictionary[@"onlineStatus"][@"lastSeen"];
         _connectedBy = dictionary[@"onlineStatus"][@"connectedBy"];
