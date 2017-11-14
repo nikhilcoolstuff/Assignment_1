@@ -27,7 +27,8 @@
         self.view.frame = CGRectMake(0, yComponent, frame.size.width,frame.size.height);
     } completion:^(BOOL finished) {
         //code for completion
-    }];}
+    }];
+}
 
 
 - (void)didReceiveMemoryWarning {

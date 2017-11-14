@@ -23,6 +23,7 @@
         _recv = dictionary[@"rawTraffic"][@"recv"];
         _applicationUsage = dictionary[@"rawTraffic"][@"applicationUsage"];
         _timeSeriesUsage = dictionary[@"rawTraffic"][@"timeSeriesUsage"];
+        _totalUsage = @([_sent doubleValue] + [_recv doubleValue]);
     }
     return self;
 }

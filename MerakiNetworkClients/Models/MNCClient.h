@@ -23,6 +23,7 @@
 // Raw Traffic
 @property (readonly, nonatomic, strong) NSNumber *sent;
 @property (readonly, nonatomic, strong) NSNumber *recv;
+@property (readonly, nonatomic, strong) NSNumber *totalUsage;
 @property (readonly, nonatomic, strong) NSDictionary *applicationUsage;
 @property (readonly, nonatomic, strong) NSArray *timeSeriesUsage;
 

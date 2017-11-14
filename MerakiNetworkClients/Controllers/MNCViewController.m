@@ -14,7 +14,7 @@
 #import "MNCUtilities.h"
 
 static NSString * const CELL_ID = @"clientViewCellID";
-static NSString * const TITLE = @"M E R A K I     C L I E N T";
+static NSString * const TITLE = @"M E R A K I";
 
 #define ROW_HEIGHT 125;
 
@@ -34,7 +34,7 @@ static NSString * const TITLE = @"M E R A K I     C L I E N T";
     renderingCompleted = NO;
     NETWORK_ABUSE_KEYS = @[@"Netflix", @"YouTube"];
     self.apiManager = [[MNCApiManager alloc] init];
-    self.clients = [self.apiManager getClients];
+    self.clients = [[self.apiManager getClients] sortedArrayUsingDescriptors:@[[NSSortDescriptor sortDescriptorWithKey:@"totalUsage" ascending:NO]]];
     
     [self configureViews];
 }
@@ -73,8 +73,8 @@ static NSString * const TITLE = @"M E R A K I     C L I E N T";
     
     MNCClient *client = self.clients[indexPath.row];
     cell.descLabel.text = client.desc;
-    cell.usageLabel.text = [NSString stringWithFormat:@"Sent: %@ Received: %@", [MNCUtilities formatKiloBytesFromNumber:client.sent], [MNCUtilities formatKiloBytesFromNumber: client.recv]];
-    cell.connectedByLabel.text = client.connectedBy;
+    cell.usageLabel.text = [NSString stringWithFormat:@"Total usage %@",[MNCUtilities formatKiloBytesFromNumber:client.totalUsage]];
+    cell.connectedByLabel.text = [MNCUtilities formatConnectedByString:client.connectedBy];
     cell.alertLabel.text = [self highUsageClientStringForClient:client];
     
     if (client.isOnline)
