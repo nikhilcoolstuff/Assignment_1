@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		030DEB501FB98FB80076E853 /* MNCDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 030DEB4F1FB98FB80076E853 /* MNCDetailController.m */; };
+		030DEB531FBA0BD80076E853 /* NavDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 030DEB521FBA0BD80076E853 /* NavDelegate.m */; };
+		B932B6B11FBB996E00816820 /* MNCUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = B932B6B01FBB996E00816820 /* MNCUtilities.m */; };
 		B96E70B01FB6EC65009630ED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B96E70AF1FB6EC65009630ED /* AppDelegate.m */; };
 		B96E70B31FB6EC65009630ED /* MNCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B96E70B21FB6EC65009630ED /* MNCViewController.m */; };
 		B96E70B61FB6EC65009630ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B96E70B41FB6EC65009630ED /* Main.storyboard */; };
@@ -39,6 +42,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		030DEB4E1FB98FB80076E853 /* MNCDetailController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MNCDetailController.h; sourceTree = "<group>"; };
+		030DEB4F1FB98FB80076E853 /* MNCDetailController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MNCDetailController.m; sourceTree = "<group>"; };
+		030DEB511FBA0BD80076E853 /* NavDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavDelegate.h; sourceTree = "<group>"; };
+		030DEB521FBA0BD80076E853 /* NavDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavDelegate.m; sourceTree = "<group>"; };
+		B932B6AF1FBB996E00816820 /* MNCUtilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MNCUtilities.h; sourceTree = "<group>"; };
+		B932B6B01FBB996E00816820 /* MNCUtilities.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MNCUtilities.m; sourceTree = "<group>"; };
 		B96E70AB1FB6EC65009630ED /* MerakiNetworkClients.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MerakiNetworkClients.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B96E70AE1FB6EC65009630ED /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B96E70AF1FB6EC65009630ED /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -116,10 +125,14 @@
 				B96E70AF1FB6EC65009630ED /* AppDelegate.m */,
 				B96E70E51FB70108009630ED /* MNCClient.h */,
 				B96E70E61FB70108009630ED /* MNCClient.m */,
-				B96E70B11FB6EC65009630ED /* MNCViewController.h */,
 				B96E70E01FB6F73B009630ED /* MNCApiManager.h */,
 				B96E70E11FB6F73B009630ED /* MNCApiManager.m */,
+				B96E70B11FB6EC65009630ED /* MNCViewController.h */,
 				B96E70B21FB6EC65009630ED /* MNCViewController.m */,
+				B932B6AF1FBB996E00816820 /* MNCUtilities.h */,
+				B932B6B01FBB996E00816820 /* MNCUtilities.m */,
+				030DEB4E1FB98FB80076E853 /* MNCDetailController.h */,
+				030DEB4F1FB98FB80076E853 /* MNCDetailController.m */,
 				B96E70E91FB75A71009630ED /* MNCClientViewCell.h */,
 				B96E70EA1FB75A71009630ED /* MNCClientViewCell.m */,
 				B96E70B41FB6EC65009630ED /* Main.storyboard */,
@@ -128,6 +141,8 @@
 				B96E70BC1FB6EC65009630ED /* Info.plist */,
 				B96E70BD1FB6EC65009630ED /* main.m */,
 				B96E70E31FB6F81C009630ED /* clients.json */,
+				030DEB511FBA0BD80076E853 /* NavDelegate.h */,
+				030DEB521FBA0BD80076E853 /* NavDelegate.m */,
 			);
 			path = MerakiNetworkClients;
 			sourceTree = "<group>";
@@ -284,8 +299,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				030DEB531FBA0BD80076E853 /* NavDelegate.m in Sources */,
+				030DEB501FB98FB80076E853 /* MNCDetailController.m in Sources */,
 				B96E70EB1FB75A71009630ED /* MNCClientViewCell.m in Sources */,
 				B96E70B31FB6EC65009630ED /* MNCViewController.m in Sources */,
+				B932B6B11FBB996E00816820 /* MNCUtilities.m in Sources */,
 				B96E70E21FB6F73B009630ED /* MNCApiManager.m in Sources */,
 				B96E70BE1FB6EC65009630ED /* main.m in Sources */,
 				B96E70B01FB6EC65009630ED /* AppDelegate.m in Sources */,

@@ -16,6 +16,7 @@
     NSString *clientsDataString = [self loadJSONContents];
     NSData *data = [clientsDataString dataUsingEncoding:NSUTF8StringEncoding];
     id jsonOutput = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
+    
     NSArray *clientArrayJson = jsonOutput[@"clients"];
     NSMutableArray *clients = [NSMutableArray new];
     [clientArrayJson enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
