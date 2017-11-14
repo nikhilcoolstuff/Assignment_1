@@ -121,20 +121,13 @@
 		B96E70AD1FB6EC65009630ED /* MerakiNetworkClients */ = {
 			isa = PBXGroup;
 			children = (
+				B9D6A0B71FBBACD9007F8DAB /* Utilities */,
+				B9D6A0B61FBBACCF007F8DAB /* Views */,
+				B9D6A0B51FBBACB0007F8DAB /* API */,
+				B9D6A0B41FBBACA7007F8DAB /* Models */,
+				B9D6A0B31FBBAC97007F8DAB /* Controllers */,
 				B96E70AE1FB6EC65009630ED /* AppDelegate.h */,
 				B96E70AF1FB6EC65009630ED /* AppDelegate.m */,
-				B96E70E51FB70108009630ED /* MNCClient.h */,
-				B96E70E61FB70108009630ED /* MNCClient.m */,
-				B96E70E01FB6F73B009630ED /* MNCApiManager.h */,
-				B96E70E11FB6F73B009630ED /* MNCApiManager.m */,
-				B96E70B11FB6EC65009630ED /* MNCViewController.h */,
-				B96E70B21FB6EC65009630ED /* MNCViewController.m */,
-				B932B6AF1FBB996E00816820 /* MNCUtilities.h */,
-				B932B6B01FBB996E00816820 /* MNCUtilities.m */,
-				030DEB4E1FB98FB80076E853 /* MNCDetailController.h */,
-				030DEB4F1FB98FB80076E853 /* MNCDetailController.m */,
-				B96E70E91FB75A71009630ED /* MNCClientViewCell.h */,
-				B96E70EA1FB75A71009630ED /* MNCClientViewCell.m */,
 				B96E70B41FB6EC65009630ED /* Main.storyboard */,
 				B96E70B71FB6EC65009630ED /* Assets.xcassets */,
 				B96E70B91FB6EC65009630ED /* LaunchScreen.storyboard */,
@@ -163,6 +156,53 @@
 				B96E70D41FB6EC65009630ED /* Info.plist */,
 			);
 			path = MerakiNetworkClientsUITests;
+			sourceTree = "<group>";
+		};
+		B9D6A0B31FBBAC97007F8DAB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B96E70B11FB6EC65009630ED /* MNCViewController.h */,
+				B96E70B21FB6EC65009630ED /* MNCViewController.m */,
+				030DEB4E1FB98FB80076E853 /* MNCDetailController.h */,
+				030DEB4F1FB98FB80076E853 /* MNCDetailController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B9D6A0B41FBBACA7007F8DAB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B96E70E51FB70108009630ED /* MNCClient.h */,
+				B96E70E61FB70108009630ED /* MNCClient.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B9D6A0B51FBBACB0007F8DAB /* API */ = {
+			isa = PBXGroup;
+			children = (
+				B96E70E01FB6F73B009630ED /* MNCApiManager.h */,
+				B96E70E11FB6F73B009630ED /* MNCApiManager.m */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		B9D6A0B61FBBACCF007F8DAB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B96E70E91FB75A71009630ED /* MNCClientViewCell.h */,
+				B96E70EA1FB75A71009630ED /* MNCClientViewCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B9D6A0B71FBBACD9007F8DAB /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B932B6AF1FBB996E00816820 /* MNCUtilities.h */,
+				B932B6B01FBB996E00816820 /* MNCUtilities.m */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

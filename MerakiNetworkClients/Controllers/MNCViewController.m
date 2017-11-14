@@ -16,7 +16,7 @@
 static NSString * const CELL_ID = @"clientViewCellID";
 static NSString * const TITLE = @"M E R A K I     C L I E N T";
 
-#define ROW_HEIGHT 120;
+#define ROW_HEIGHT 125;
 
 @interface MNCViewController () {
     BOOL renderingCompleted;
