@@ -31,4 +31,19 @@
     return [displayString stringByAppendingString:@"Internet"];
 }
 
+
++(NSString *) formatAppsUsedToString: (NSArray *) apps {
+    
+    __block NSString *displayString = @"";
+    [apps enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        [displayString stringByAppendingString:[NSString stringWithFormat:@"%@, ", obj]];
+    }];
+    
+    //TODO returning blank
+    if (displayString.length > 2)
+        return [displayString substringToIndex:(displayString.length - 2)];
+    else
+        return @"";
+}
+
 @end

@@ -27,20 +27,20 @@
     self.lottieLogo = [LOTAnimationView animationNamed:@"loading"];
     self.lottieLogo.contentMode = UIViewContentModeScaleAspectFill;
     [self.view addSubview:self.lottieLogo];
-    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
 
     self.lottieButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [self.lottieButton addTarget:self action:@selector(_playLottieAnimation) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:self.lottieButton];
     
     self.tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
-    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"customcell"];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     self.tableView.separatorInset = UIEdgeInsetsMake(0, 20, 0, 20);
     [self.view addSubview:self.tableView];
 
     self.tableView.separatorInset = UIEdgeInsetsMake(0, 20, 0, 20);
+
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -69,17 +69,19 @@
     self.tableViewItems = @[@{@"name" : @"DESC",
                               @"value" : self.client.desc},
                             @{@"name" : @"IP",
-                              @"vc" : self.client.ip},
+                              @"value" : self.client.ip},
                             @{@"name" : @"IS ONLINE",
-                              @"vc" : self.client.isOnline ? @"YES" : @"NO"},
+                              @"value" : self.client.isOnline ? @"YES" : @"NO"},
                             @{@"name" : @"Total Usage",
-                              @"vc" : [MNCUtilities formatKiloBytesFromNumber:self.client.totalUsage]},
+                              @"value" : [MNCUtilities formatKiloBytesFromNumber:self.client.totalUsage]},
                             @{@"name" : @"Sent",
-                              @"vc" : [MNCUtilities formatKiloBytesFromNumber:self.client.sent]},
+                              @"value" : [MNCUtilities formatKiloBytesFromNumber:self.client.sent]},
                             @{@"name" : @"Received",
-                              @"vc" : [MNCUtilities formatKiloBytesFromNumber:self.client.recv]},
+                              @"value" : [MNCUtilities formatKiloBytesFromNumber:self.client.recv]},
+                            @{@"name" : @"Apps Used",
+                              @"value" : [MNCUtilities formatAppsUsedToString:[self.client.applicationUsage allKeys]]},
                             @{@"name" : @"Conected by",
-                              @"vc" : [MNCUtilities formatConnectedByString:self.client.connectedBy]}];
+                              @"value" : [MNCUtilities formatConnectedByString:self.client.connectedBy]}];
 }
 
 - (void)_playLottieAnimation {
@@ -94,8 +96,8 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
-    cell.textLabel.text = self.tableViewItems[indexPath.row][@"name"];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"customcell" forIndexPath:indexPath];
+    cell.textLabel.text = [self.tableViewItems[indexPath.row][@"name"]  stringByAppendingString:[NSString stringWithFormat:@": %@", self.tableViewItems[indexPath.row][@"value"]]];
     return cell;
 }
 

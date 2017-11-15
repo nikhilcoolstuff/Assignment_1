@@ -10,5 +10,6 @@
 
 @interface MNCUtilities : NSObject
 +(NSString *) formatKiloBytesFromNumber: (NSNumber *) kiloBytes;
-+(NSString *) formatConnectedByString: (NSString *) input; 
++(NSString *) formatConnectedByString: (NSString *) input;
++(NSString *) formatAppsUsedToString: (NSArray *) apps;
 @end
