@@ -1,1 +1,28 @@
 Notes: -
+I really enjoyed the assignment and it brought about lot of thougts in structing and architecting the app. 
+I started with reading the contents of the JSON using an Api Manager class so any class that wants to access that data has it conviniently. 
+I tried to break down code such that its testable through test cases. 
+
+Architecture - 
+I begin with using autolayout through storyboard and started with a View controller that shows the list of meraki clients and a detail view controller showing data for each client.  
+
+UI - 
+For clear visibility and ease to read, I tried to create UI with proper font sizes and colors so that what is most important to the user is highlighted and clearly visible. 
+
+Animations - 
+I used Lottie library from Airbnb that allows us to easily add animations through AfterEffects bodymovin plugin. 
+There are animations used at 2 places, first as the background view of the first screen table view. If you make the number of rows count to 0, the background view will show up with that cool animation showing a network effect. 
+
+Then there is also an animation on top of the detail view controller. The goal is to show a network effect in that area just when the view loads. 
+
+Proposed Changes that I wanted to do but ran out of time as was able to devote just a couple of hours on it :- 
+
+1) Add graphs for time based data on the detail view. 
+2) Add Data to top of the animation on the detail view. 
+3) Add search bar on the main view controller. 
+
+
+Thanks for the opportunity to take this assignment:) 
+
+
+

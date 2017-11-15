@@ -23,8 +23,6 @@
 		B96E70E71FB70108009630ED /* MNCClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B96E70E61FB70108009630ED /* MNCClient.m */; };
 		B96E70EB1FB75A71009630ED /* MNCClientViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B96E70EA1FB75A71009630ED /* MNCClientViewCell.m */; };
 		B9D6A0B91FBBB83E007F8DAB /* pulse_loader.json in Resources */ = {isa = PBXBuildFile; fileRef = B9D6A0B81FBBB83E007F8DAB /* pulse_loader.json */; };
-		B9D6A0BB1FBBB9A8007F8DAB /* water_loader.json in Resources */ = {isa = PBXBuildFile; fileRef = B9D6A0BA1FBBB9A7007F8DAB /* water_loader.json */; };
-		B9D6A0BD1FBBB9C4007F8DAB /* wave.json in Resources */ = {isa = PBXBuildFile; fileRef = B9D6A0BC1FBBB9C3007F8DAB /* wave.json */; };
 		B9D6A0BF1FBBBA70007F8DAB /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = B9D6A0BE1FBBBA70007F8DAB /* loading.json */; };
 		F52F5269A57EA1FC09FE640A /* libPods-MerakiNetworkClients.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E2A036FC0B53A3FA7BF9E2E /* libPods-MerakiNetworkClients.a */; };
 /* End PBXBuildFile section */
@@ -80,8 +78,6 @@
 		B96E70E91FB75A71009630ED /* MNCClientViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MNCClientViewCell.h; sourceTree = "<group>"; };
 		B96E70EA1FB75A71009630ED /* MNCClientViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MNCClientViewCell.m; sourceTree = "<group>"; };
 		B9D6A0B81FBBB83E007F8DAB /* pulse_loader.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pulse_loader.json; sourceTree = "<group>"; };
-		B9D6A0BA1FBBB9A7007F8DAB /* water_loader.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = water_loader.json; sourceTree = "<group>"; };
-		B9D6A0BC1FBBB9C3007F8DAB /* wave.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = wave.json; sourceTree = "<group>"; };
 		B9D6A0BE1FBBBA70007F8DAB /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -170,8 +166,6 @@
 				030DEB521FBA0BD80076E853 /* NavDelegate.m */,
 				B9D6A0B81FBBB83E007F8DAB /* pulse_loader.json */,
 				B9D6A0BE1FBBBA70007F8DAB /* loading.json */,
-				B9D6A0BA1FBBB9A7007F8DAB /* water_loader.json */,
-				B9D6A0BC1FBBB9C3007F8DAB /* wave.json */,
 			);
 			path = MerakiNetworkClients;
 			sourceTree = "<group>";
@@ -351,10 +345,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B96E70BB1FB6EC65009630ED /* LaunchScreen.storyboard in Resources */,
-				B9D6A0BD1FBBB9C4007F8DAB /* wave.json in Resources */,
 				B9D6A0BF1FBBBA70007F8DAB /* loading.json in Resources */,
 				B96E70B81FB6EC65009630ED /* Assets.xcassets in Resources */,
-				B9D6A0BB1FBBB9A8007F8DAB /* water_loader.json in Resources */,
 				B96E70E41FB6F81C009630ED /* clients.json in Resources */,
 				B96E70B61FB6EC65009630ED /* Main.storyboard in Resources */,
 				B9D6A0B91FBBB83E007F8DAB /* pulse_loader.json in Resources */,
