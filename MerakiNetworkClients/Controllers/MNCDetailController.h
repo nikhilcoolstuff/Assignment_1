@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MNCClient.h"
 
-@interface MNCDetailController : UITableViewController
-
+@interface MNCDetailController : UIViewController
+@property (nonatomic, strong) MNCClient *client; 
 @end

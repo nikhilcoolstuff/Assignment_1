@@ -12,6 +12,7 @@
 #import "MNCClientViewCell.h"
 #import "MNCDetailController.h"
 #import "MNCUtilities.h"
+#import <Lottie/Lottie.h>
 
 static NSString * const CELL_ID = @"clientViewCellID";
 static NSString * const TITLE = @"M E R A K I";
@@ -21,10 +22,13 @@ static NSString * const TITLE = @"M E R A K I";
 @interface MNCViewController () {
     BOOL renderingCompleted;
     NSArray *NETWORK_ABUSE_KEYS;
+    MNCClient *selectedClient;
 }
 
 @property (nonatomic, strong) MNCApiManager *apiManager;
 @property (nonatomic, strong) NSArray *clients;
+@property (nonatomic, strong) LOTAnimationView *lottieLogo;
+
 @end
 
 @implementation MNCViewController
@@ -32,7 +36,7 @@ static NSString * const TITLE = @"M E R A K I";
 - (void)viewDidLoad {
     [super viewDidLoad];
     renderingCompleted = NO;
-    NETWORK_ABUSE_KEYS = @[@"Netflix", @"YouTube"];
+    NETWORK_ABUSE_KEYS = @[@"Netflix", @"YouTube"]; // add restricted apps here
     self.apiManager = [[MNCApiManager alloc] init];
     self.clients = [[self.apiManager getClients] sortedArrayUsingDescriptors:@[[NSSortDescriptor sortDescriptorWithKey:@"totalUsage" ascending:NO]]];
     
@@ -41,7 +45,8 @@ static NSString * const TITLE = @"M E R A K I";
 
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
-//     [self addDetailViewController];
+    self.lottieLogo.loopAnimation = YES;
+    [self.lottieLogo play];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -86,13 +91,22 @@ static NSString * const TITLE = @"M E R A K I";
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    selectedClient = self.clients[indexPath.row];
     [self performSegueWithIdentifier:@"segue_to_detail" sender:nil];
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    MNCDetailController *detailVC = (MNCDetailController *)segue.destinationViewController;
+    detailVC.client = selectedClient;
 }
 
 #pragma mark local methods
 
 -(void) configureViews {
     self.navigationItem.title = TITLE;
+    self.lottieLogo = [LOTAnimationView animationNamed:@"pulse_loader"];
+    self.lottieLogo.contentMode = UIViewContentModeScaleAspectFill;
+    self.tableView.backgroundView = self.lottieLogo;
 }
 
 // Check if client is abusing network
@@ -111,16 +125,4 @@ static NSString * const TITLE = @"M E R A K I";
     return nil;
 }
 
--(void) addDetailViewController {
-    
-    MNCDetailController  *detailVC = [[MNCDetailController alloc] init];
-    [self addChildViewController:detailVC];
-    [self.view addSubview:detailVC.view];
-    [detailVC didMoveToParentViewController:self];
-    
-    // 3- Adjust bottomSheet frame and initial position.
-    float height = self.view.frame.size.height;
-    float width  = self.view.frame.size.width;
-    detailVC.view.frame = CGRectMake(0, CGRectGetMaxY(self.view.frame), width, height);
-}
 @end

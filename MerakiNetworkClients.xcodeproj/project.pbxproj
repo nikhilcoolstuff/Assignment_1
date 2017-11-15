@@ -22,6 +22,11 @@
 		B96E70E41FB6F81C009630ED /* clients.json in Resources */ = {isa = PBXBuildFile; fileRef = B96E70E31FB6F81C009630ED /* clients.json */; };
 		B96E70E71FB70108009630ED /* MNCClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B96E70E61FB70108009630ED /* MNCClient.m */; };
 		B96E70EB1FB75A71009630ED /* MNCClientViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B96E70EA1FB75A71009630ED /* MNCClientViewCell.m */; };
+		B9D6A0B91FBBB83E007F8DAB /* pulse_loader.json in Resources */ = {isa = PBXBuildFile; fileRef = B9D6A0B81FBBB83E007F8DAB /* pulse_loader.json */; };
+		B9D6A0BB1FBBB9A8007F8DAB /* water_loader.json in Resources */ = {isa = PBXBuildFile; fileRef = B9D6A0BA1FBBB9A7007F8DAB /* water_loader.json */; };
+		B9D6A0BD1FBBB9C4007F8DAB /* wave.json in Resources */ = {isa = PBXBuildFile; fileRef = B9D6A0BC1FBBB9C3007F8DAB /* wave.json */; };
+		B9D6A0BF1FBBBA70007F8DAB /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = B9D6A0BE1FBBBA70007F8DAB /* loading.json */; };
+		F52F5269A57EA1FC09FE640A /* libPods-MerakiNetworkClients.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E2A036FC0B53A3FA7BF9E2E /* libPods-MerakiNetworkClients.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +51,9 @@
 		030DEB4F1FB98FB80076E853 /* MNCDetailController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MNCDetailController.m; sourceTree = "<group>"; };
 		030DEB511FBA0BD80076E853 /* NavDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavDelegate.h; sourceTree = "<group>"; };
 		030DEB521FBA0BD80076E853 /* NavDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavDelegate.m; sourceTree = "<group>"; };
+		3E2A036FC0B53A3FA7BF9E2E /* libPods-MerakiNetworkClients.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MerakiNetworkClients.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D6F07063738C7293E4C5DC2 /* Pods-MerakiNetworkClients.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MerakiNetworkClients.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MerakiNetworkClients/Pods-MerakiNetworkClients.debug.xcconfig"; sourceTree = "<group>"; };
+		4FD3386552A7962FAA9AB0A1 /* Pods-MerakiNetworkClients.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MerakiNetworkClients.release.xcconfig"; path = "Pods/Target Support Files/Pods-MerakiNetworkClients/Pods-MerakiNetworkClients.release.xcconfig"; sourceTree = "<group>"; };
 		B932B6AF1FBB996E00816820 /* MNCUtilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MNCUtilities.h; sourceTree = "<group>"; };
 		B932B6B01FBB996E00816820 /* MNCUtilities.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MNCUtilities.m; sourceTree = "<group>"; };
 		B96E70AB1FB6EC65009630ED /* MerakiNetworkClients.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MerakiNetworkClients.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,6 +79,10 @@
 		B96E70E61FB70108009630ED /* MNCClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MNCClient.m; sourceTree = "<group>"; };
 		B96E70E91FB75A71009630ED /* MNCClientViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MNCClientViewCell.h; sourceTree = "<group>"; };
 		B96E70EA1FB75A71009630ED /* MNCClientViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MNCClientViewCell.m; sourceTree = "<group>"; };
+		B9D6A0B81FBBB83E007F8DAB /* pulse_loader.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pulse_loader.json; sourceTree = "<group>"; };
+		B9D6A0BA1FBBB9A7007F8DAB /* water_loader.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = water_loader.json; sourceTree = "<group>"; };
+		B9D6A0BC1FBBB9C3007F8DAB /* wave.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = wave.json; sourceTree = "<group>"; };
+		B9D6A0BE1FBBBA70007F8DAB /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F52F5269A57EA1FC09FE640A /* libPods-MerakiNetworkClients.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +111,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		336A77AAE93814EA6FDF799C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4D6F07063738C7293E4C5DC2 /* Pods-MerakiNetworkClients.debug.xcconfig */,
+				4FD3386552A7962FAA9AB0A1 /* Pods-MerakiNetworkClients.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4EA8C4D9883ABD3D1F29474D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3E2A036FC0B53A3FA7BF9E2E /* libPods-MerakiNetworkClients.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B96E70A21FB6EC65009630ED = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +135,8 @@
 				B96E70C61FB6EC65009630ED /* MerakiNetworkClientsTests */,
 				B96E70D11FB6EC65009630ED /* MerakiNetworkClientsUITests */,
 				B96E70AC1FB6EC65009630ED /* Products */,
+				336A77AAE93814EA6FDF799C /* Pods */,
+				4EA8C4D9883ABD3D1F29474D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -136,6 +168,10 @@
 				B96E70E31FB6F81C009630ED /* clients.json */,
 				030DEB511FBA0BD80076E853 /* NavDelegate.h */,
 				030DEB521FBA0BD80076E853 /* NavDelegate.m */,
+				B9D6A0B81FBBB83E007F8DAB /* pulse_loader.json */,
+				B9D6A0BE1FBBBA70007F8DAB /* loading.json */,
+				B9D6A0BA1FBBB9A7007F8DAB /* water_loader.json */,
+				B9D6A0BC1FBBB9C3007F8DAB /* wave.json */,
 			);
 			path = MerakiNetworkClients;
 			sourceTree = "<group>";
@@ -212,9 +248,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B96E70D71FB6EC65009630ED /* Build configuration list for PBXNativeTarget "MerakiNetworkClients" */;
 			buildPhases = (
+				CE7ED51DE7FCD44DB7B7F7DE /* [CP] Check Pods Manifest.lock */,
 				B96E70A71FB6EC65009630ED /* Sources */,
 				B96E70A81FB6EC65009630ED /* Frameworks */,
 				B96E70A91FB6EC65009630ED /* Resources */,
+				A1C95AF5EC3E8C02AA3F4A00 /* [CP] Embed Pods Frameworks */,
+				BE1C13592D9CE505D1CC6EF0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -312,9 +351,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B96E70BB1FB6EC65009630ED /* LaunchScreen.storyboard in Resources */,
+				B9D6A0BD1FBBB9C4007F8DAB /* wave.json in Resources */,
+				B9D6A0BF1FBBBA70007F8DAB /* loading.json in Resources */,
 				B96E70B81FB6EC65009630ED /* Assets.xcassets in Resources */,
+				B9D6A0BB1FBBB9A8007F8DAB /* water_loader.json in Resources */,
 				B96E70E41FB6F81C009630ED /* clients.json in Resources */,
 				B96E70B61FB6EC65009630ED /* Main.storyboard in Resources */,
+				B9D6A0B91FBBB83E007F8DAB /* pulse_loader.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,6 +376,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A1C95AF5EC3E8C02AA3F4A00 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MerakiNetworkClients/Pods-MerakiNetworkClients-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE1C13592D9CE505D1CC6EF0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MerakiNetworkClients/Pods-MerakiNetworkClients-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE7ED51DE7FCD44DB7B7F7DE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B96E70A71FB6EC65009630ED /* Sources */ = {
@@ -508,6 +599,7 @@
 		};
 		B96E70D81FB6EC65009630ED /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D6F07063738C7293E4C5DC2 /* Pods-MerakiNetworkClients.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -522,6 +614,7 @@
 		};
 		B96E70D91FB6EC65009630ED /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FD3386552A7962FAA9AB0A1 /* Pods-MerakiNetworkClients.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
